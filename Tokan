@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Store - Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        .product-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 45%;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-details {
+            width: 100%;
+            max-width: 50%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .product-details h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .product-details p {
+            font-size: 16px;
+            color: #555;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #333;
+            margin: 15px 0;
+        }
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        /* Form Styles */
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin: 0 0 15px;
+        }
+        .form-container input,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #218838;
+        }
+        /* Payment Section */
+        .payment-container {
+            margin-top: 20px;
+        }
+        /* Video Section */
+        .video-container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My E-commerce Store</h1>
+</header>
+
+<nav>
+    <a href="#product">Product Page</a>
+    <a href="#signup">Sign Up</a>
+    <a href="#order">Order Now</a>
+</nav>
+
+<!-- Product Page -->
+<div id="product" class="product-container">
+    <div class="product-image">
+        <img src="path/to/your/product-image.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+        <h2>Product Name</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis elementum augue.</p>
+        <div class="product-price">$49.99</div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Video Section -->
+<div class="video-container">
+    <h2>Watch Product Video</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+</div>
+
+<!-- Sign-Up Form -->
+<div id="signup" class="form-container">
+    <h2>Sign Up</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<!-- Order Form -->
+<div id="order" class="form-container">
+    <h2>Place Your Order</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Shipping Address" required>
+        <input type="number" placeholder="Quantity" required>
+
+        <!-- Payment Method -->
+        <div class="payment-container">
+            <h3>Select Payment Method</h3>
+            <select required>
+                <option value="" disabled selected>Select Payment Option</option>
+                <option value="upi">UPI</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paytm">Paytm</option>
+                <option value="google-pay">Google Pay</option>
+            </select>
+        </div>
+        
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 My E-commerce Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
